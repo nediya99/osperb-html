@@ -1,0 +1,231 @@
+/*base rule*/
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat',sans-serif;
+}
+p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #dee1e4;    
+}
+.r-p{
+    padding-top: 80px ;
+    padding-bottom: 80px;
+}
+.bg-sec{
+    background: #F8F9Fa;
+}
+/*navigation*/
+body{
+ background: #41B3A3
+}   
+nav .r-nav{
+    background: transparent;
+    padding: 20px 0;
+    transition: .5s all;
+}
+nav .navbar-brand{
+    font-size: 30px;
+    color: #fff;
+    padding-left: 30px !important
+}
+nav .navbar-nav li a{
+    color: rgba(225, 225, 225, 0.8) !important;
+    font-size: 16px;
+    letter-spacing: .05em;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+}
+nav .navbar-nav li{
+    margin-left: 15px;
+    padding-right: 30px !important;
+
+}
+nav.r-nav.stickyadd{
+  background: rgba(247, 249, 250, 0.959) !important;
+  padding: 15px 0;
+  box-shadow: 0 1px 8px 3px rgba(0,0,0,.05);
+  transition: .5s all ease-in-out;
+}
+nav.stickyadd .navbar-brand{
+    color: #000;
+    font-size: 40px;
+    transition: .5s all;
+}
+nav.stickyadd .navbar-nav .nav-link{
+    color: #000 !important;
+}
+.navbar .hamburger{
+    color: #fff;
+}
+nav.stickyadd .hamburger{
+    color: #000;
+}
+
+/*scrollbar*/
+::-webkit-scrollbar{
+    width: 0;   
+}
+/* #progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(to top,#008aff,#00ffe7);
+} */
+#scrollPath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 100%;
+    background: rgba(225,225,225,0.05);
+     animation: animate 5s linear infinite;
+}
+/* scrol bar*/
+@keyframes animate{
+    0%,100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+/* #progressbar:before{
+    content:'';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,#008aff,#00ffe7);
+    filter: blur(10px);
+}#progressbar:after{
+    content:'';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,#008aff,#00ffe7);
+    filter: blur(30px);
+}  */
+        
+
+/*header */
+
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient/*make a layer infront of image to decres intencity*/(rgba(0, 0, 0, 0.4),rgba(0,0,0,.5)),url('../image/bg-color.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 25px;
+}
+.heder{ /*veticaly and horizondaly aligne item*/
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.content-box{
+    max-width: 700px;/*resposive , if decrese divice size it incres upto 700px */
+    color:#fff;
+    
+
+}
+.content-box h4{
+    font-size: 30px;
+
+}
+.content-box h1{
+    font-size: 52px;
+}
+/*button*/
+.content-box a{
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 6px 25px;
+}
+.content-box a:hover{
+    color: #000;
+    background: #fff;
+    transition: 0.5s;
+}
+.content-box p{
+    color:rgba(#fff);
+}
+/*about us*/
+.about{
+    background: rgba(225, 225, 225);
+}
+.about li a{
+    color:#000;
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    font-size: 20px;
+    border: 2px solid rgba(0,0,0,.09);
+    border-radius: 50%;
+    line-height: 40px;
+    transition: 0.5s all;
+    text-align: center;
+}
+.about li a:hover{
+    color: rgb(225, 176, 202);
+}
+img{
+    width: 550px;
+    height: 350px;
+}
+/*progres bar*/
+.exp-class{
+    background:rgba(225, 225, 225);
+    
+}
+.exp-class .progress{
+    height: 20px;
+    border-radius: 20px;
+    font-size: 10px;
+}
+.progress-br{
+    background-color: #ee8683   !important; 
+}
+.exp-class label{
+    font-size: 20px;
+    margin: 10px;
+}
+.exp-class{
+     padding-top: 80px ;
+    padding-bottom: 80px;
+}
+/*cards*/
+
+.card .card-header{
+    background: #F8F9Fa !important;
+}
+.card .card-header i{
+    font-size: 40px;
+}
+.card-body .cart-title{
+    font-size: 30px;
+}
+.card-body .service-border{
+    height: 100px;
+    margin: 20px auto;
+    
+}
+.r-card{
+    padding-top: 20px;
+}
+
